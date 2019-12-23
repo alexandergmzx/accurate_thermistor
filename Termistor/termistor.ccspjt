@@ -1,0 +1,35 @@
+[PROJECT]
+Target=termistor.hex
+Processor_Text=PIC18F4550
+CCSVerions=5.033
+Compiler=PCH
+CCSVersion=5.033
+[Target Data]
+FileList=termistor.c
+[Directories]
+Include=
+[C:\Users\OPERADOR\Downloads\Programas de prueba (1)\Programas de prueba\Termistor\termistor]
+Type=4
+[mru-list]
+1=termistor.c
+
+[ProjectLog]
+Days=1
+D1=09-04-2019
+D1_L=3
+D1_L1=[54381]Project Opened.
+D1_L2=[54409]Started Editing.
+D1_L3=[54778]Stopped Editing.
+
+[Opened Files]
+1=termistor.c
+t1=1
+Count=1
+[termistor.c]
+Type=4
+
+[defines]
+buildcount=2
+[Units]
+Count=1
+1=termistor (main)

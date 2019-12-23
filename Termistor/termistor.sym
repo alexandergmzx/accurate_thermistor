@@ -1,0 +1,185 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004-005 dato
+006-009 grados
+00A-00B @sprintf_string
+00C-00D @ITOF.P1
+00C-00F atan2.y
+00C-00F @PRINTF_L32D_676FPFPF.P1
+00C     @PSTRINGCN_676.P2
+00C     lcd_init.i
+00C     voltaje.@SCRATCH1
+00C     MAIN.@SCRATCH1
+00C     @PSTRINGC_676.@SCRATCH1
+00D     lcd_init.@SCRATCH1
+00D     voltaje.@SCRATCH2
+00D     @PSTRINGC_676.@SCRATCH2
+00D     @PSTRINGCN_676.@SCRATCH1
+00E     voltaje.@SCRATCH3
+00E     @PSTRINGCN_676.@SCRATCH2
+00F     voltaje.@SCRATCH4
+010     @PRINTF_L32D_676FPFPF.P1
+010-013 exp.x
+010-013 atan2.x
+011     @PRINTF_L32D_676FPFPF.@SCRATCH1
+012     @PRINTF_L32D_676FPFPF.@SCRATCH2
+013     @PRINTF_L32D_676FPFPF.@SCRATCH3
+014-017 exp.y
+014-017 atan2.z
+014     @PRINTF_L32D_676FPFPF.@SCRATCH4
+015     @PRINTF_L32D_676FPFPF.@SCRATCH5
+016     @PRINTF_L32D_676FPFPF.@SCRATCH6
+017     @PRINTF_L32D_676FPFPF.@SCRATCH7
+018-01B exp.res
+018.0   atan2.sign
+018     @PRINTF_L32D_676FPFPF.@SCRATCH8
+019     lcd_putc.c
+019-01C @FTOSD.P1
+019-01C @DIV3232.P2
+019     atan2.quad
+01A     @delay_ms1.P1
+01A     lcd_gotoxy.x
+01B     lcd_gotoxy.y
+01C     lcd_gotoxy.address
+01C-01F exp.r
+01D-020 @DIV3232.P1
+01D     lcd_gotoxy.@SCRATCH1
+01D     @FTOSD.@SCRATCH1
+01E     lcd_send_byte.address
+01F     lcd_send_byte.n
+020     lcd_read_byte.low
+020     exp.n
+020     lcd_send_byte.@SCRATCH1
+021     lcd_read_byte.high
+021.0   exp.s
+021     lcd_send_nibble.n
+021     @DIV3232.@SCRATCH1
+022-025 @DIVFF.P1
+022-025 @FLT.P2
+022-025 @MULFF.P3
+022     lcd_read_nibble.n
+022-025 @SFTOI.P1
+022     lcd_read_byte.@SCRATCH1
+022     exp.@SCRATCH1
+022     @DIV3232.@SCRATCH2
+023     lcd_read_nibble.@SCRATCH1
+023     exp.@SCRATCH2
+023     @DIV3232.@SCRATCH3
+024     exp.@SCRATCH3
+024     @DIV3232.@SCRATCH4
+025     exp.@SCRATCH4
+025     @DIV3232.@SCRATCH5
+026-029 @FLT.P1
+026-029 @ADDFF.P2
+026-029 @DIVFF.P3
+026-029 @MULFF.P4
+026-027 @SITOF.P5
+02A-02D @ADDFF.P1
+02A     @FLT.@SCRATCH1
+02A     @MULFF.@SCRATCH1
+02A     @DIVFF.@SCRATCH1
+02B     @FLT.@SCRATCH2
+02B     @MULFF.@SCRATCH2
+02B     @DIVFF.@SCRATCH2
+02C     @MULFF.@SCRATCH3
+02C     @DIVFF.@SCRATCH3
+02D     @DIVFF.@SCRATCH4
+02E     @ADDFF.@SCRATCH1
+02E     @DIVFF.@SCRATCH5
+02F     @ADDFF.@SCRATCH2
+02F     @DIVFF.@SCRATCH6
+030     @ADDFF.@SCRATCH3
+031     @ADDFF.@SCRATCH4
+032     @ADDFF.@SCRATCH5
+033     @ADDFF.@SCRATCH6
+034     @ADDFF.@SCRATCH7
+035     @ADDFF.@SCRATCH8
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P1
+FE9-FEA @READ_PROGRAM_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P3
+FE9-FEA @WRITE_PACKED_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  LCD_INIT_STRING.call
+000014  LCD_INIT_STRING.data
+000018  @const830.call
+000026  @const835.call
+00003C  @delay_ms1
+000064  lcd_send_nibble
+0000AA  lcd_read_nibble
+0000FC  lcd_read_byte
+00014A  lcd_send_byte
+00018A  lcd_init
+0001E8  @ITOF
+000220  @MULFF
+000312  @SFTOI
+00034C  @FLT
+0003C4  @SITOF
+00040E  @ADDFF
+000678  @DIVFF
+0007D2  exp
+000B86  voltaje
+000C7E  lcd_gotoxy
+000CA2  lcd_putc
+000CEC  @PSTRINGC_676
+000D0E  @PSTRINGCN_676
+000D2C  @FTOSD
+000D6C  @DIV3232
+000DFA  @PRINTF_L32D_676FPFPF
+000F76  @cinit1
+000F76  MAIN
+000F8A  @cinit2
+
+Project Directory:
+    C:\Users\OPERADOR\Downloads\Programas de prueba (1)\Programas de prueba\Termistor\
+
+Project Files:
+    termistor.c                                             [09-abr.-19 15:06  CRC=B77AD1B7]
+    ..\..\..\..\..\..\Program Files (x86)\PICC\Devices\18F4550.h [08-dic.-14 16:26  CRC=9C9461EA]
+    lcd2.c                                                  [15-mar.-19 18:50  CRC=10F94DF5]
+    ..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\math.h [28-sep.-12 11:35  CRC=546412C9]
+
+Source signature=0DD0A728
+Program memory checksum=0000
+Program memory CRC=0000
+Hex file CRC=4BA7
+
+Units:
+    termistor (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   termistor.xsym
+    Errors:      termistor.err
+    Ext Symbols: termistor.esym
+    INHX32:      termistor.hex
+    Symbols:     termistor.sym
+    List:        termistor.lst
+    Debug/COFF:  termistor.cof
+    Project:     termistor.ccspjt
+    Call Tree:   termistor.tre
+    Statistics:  termistor.STA
